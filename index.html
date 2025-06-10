@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="#ECECEC">
+   <title>supper-billing</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+<header>
+   <div class="head">
+      <div class="user-logo">
+         <div class="user">
+            <i class="fa-solid fa-circle-user"></i>
+         </div>
+         <div class="logo"><p>supper-bill</p></div>
+      </div>
+      <div class="notification">
+         <i class="fa-solid fa-bell"></i>
+      </div>
+   </div>
+</header>
+   
+   
+   
+   
+<main>
+ <div class="main-box">
+   <div class="add-list-list" id="addbtn">
+      <i class="fa-solid fa-file-medical"></i>
+      <p>Create a new list</p>
+   </div>
+   <div class="settings">
+      <div class="manage-lists">
+         <i class="fa-solid fa-cubes"></i>
+         <p>Manage Inventory</p></div>
+      <div class="user-setting">
+         <i class="fa-solid fa-gear"></i>
+         <p>Setting</p>
+      </div>
+   </div>
+</div>
+</main>
+
+
+   <div class="box" id="box">
+      
+      <div class="create">
+         
+         <div class="opt">
+            <div class="cancel" id="close">
+               <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="save">
+               <button type="submit">
+                  <i class="fa-solid fa-floppy-disk">
+                  </i> SAVE</button>
+            </div>
+         </div>
+         
+         <div class="user-info">
+            <div>
+               <label for="user-name">Name</label>
+               <input type="text" id="user-name" required/>
+            </div>
+            <div>
+               <label for="mobile">Mob. No.</label>
+               <input type="number" name="" id="mobile" required/>
+            </div>
+         </div>
+         
+         <hr>
+         
+         <div>
+            <input type="text" id="addinput"/>
+            <button type="button" id="additem">ADD</button>
+         </div>
+         
+         <hr>
+         
+         <div class="list-items" id="list-box"> </div>
+         
+      </div>
+   </div>
+
+
+
+
+
+
+<div class="saved-list">
+   <table>
+      <tr class="table-head">
+         <th>S N.</th>
+         <th class="name">Name</th>
+         <th>ID.</th>
+         <th>Quality</th>
+         <th class="tp">Total-Price</th>
+         <th>option</th>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>amahnjjjnbhhhhnnn</td>
+         <td>01</td>
+         <td>5</td>
+         <td>800</td>
+         <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+      </tr>
+   </table>
+</div>
+
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

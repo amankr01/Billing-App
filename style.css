@@ -1,0 +1,204 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   font-size: 14px;
+   color: #333;
+}
+
+header{
+   width: 100vw;
+   height: 55px;
+   background-color: #ECECEC;
+   padding: 10px;
+}
+.head{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.user-logo{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+.head .user , .notification{
+   height: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 20px;
+   padding: 0 10px;
+   cursor: pointer;
+}
+.logo{
+   padding: 5px 10px;
+   background : #D0D246;
+}
+/*--------------------_-_-_-_-_-_-_-_-_-_*/
+main{
+   width : 100vw;
+   height: 200px;
+   padding: 10px;
+   padding-top: 0;
+   background: #ECECEC;
+}
+.main-box{
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   background :#3745D5;
+   border: 2px solid #1D32FF;
+   border-radius: 20px;
+   position: relative;
+}
+.add-list-list{
+   width: 100%;
+   height: calc(100% - 55px);
+   text-align: center;
+   background: #79B235;
+   border: 1px solid #BAD170;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #FFF5F5;
+   gap: 10px;
+   font-size: 12px;
+}
+.add-list-list i{
+   font-size: 38px;
+}
+.settings{
+   display: flex;
+   width: calc(100% - 20px);
+   gap: 10px;
+   padding-top: 10px;
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+}
+.settings div{
+   flex: 0 0 calc(50% - 5px);
+   border: 1.2px solid #5B69FF;
+   background: #4754DD;
+   border-radius: 10px;
+   height: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   color: #FFFFFF;
+}
+.settings div i{
+   color: #DEE1FF;
+}
+.settings div p{
+   font-size: 11px
+}
+
+
+/*******/
+.saved-list{
+   width: 100vw;
+   height: calc(100vh - 255px);
+   padding: 0 10px 15px 10px;
+   background: #ECECEC;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+
+.saved-list table, table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+.saved-list th,th {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background: #A6ADFF;
+  font-size: 9px;
+}
+.saved-list th,.saved-list td, th , td {
+  text-align: center;
+  padding: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.saved-list tr, tr{
+   background: #FFFFFF;
+}
+.saved-list tr:nth-child(odd), tr:nth-child(odd) {background-color: #E1E1E1;}
+
+.name{
+   width: 30%;
+   max-width: 40%
+}
+
+
+
+/**** create new list css ********/
+.box{
+   backdrop-filter: blur(3px);
+   height: 100dvh;
+   width: 100vw;
+   padding-top: 40px;
+   position : absolute;
+   top: 0;
+   left: 0;
+   display: none;
+}
+
+.show{
+   display: block;
+   z-index: 100;
+}
+
+.box .create{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px 10px 0 0;
+   background: seagreen;
+   padding: 10px;
+   overflow-y: auto;
+}
+
+.opt{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.user-info{
+   width: 100%;
+   padding: 10px 0;
+}
+.list-items{
+   margin: 10px 0;
+   width: 100%;
+}
+
+.create input[type="text"] {
+   padding: 6px;
+   margin-right: 8px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+
+.create button {
+   padding: 6px 12px;
+   background-color: #4754DD;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
