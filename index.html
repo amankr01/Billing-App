@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +10,7 @@
 </head>
 <body>
    
-
+<!--header++++++++++++++++++++-->
 <header>
    <div class="head">
       <div class="user-logo">
@@ -25,7 +24,6 @@
       </div>
    </div>
 </header>
-   
    
    
    
@@ -47,72 +45,41 @@
 </div>
 </main>
 
-
+<!--+++++++++++++++++++++++++++-->
    <div class="box" id="box">
-      
       <div class="create">
          
          <div class="opt">
             <div class="cancel" id="close">
                <i class="fa-solid fa-xmark"></i>
             </div>
-            <div class="save">
+            <div class="save" id="save">
                <button type="submit">
                   <i class="fa-solid fa-floppy-disk">
                   </i> SAVE</button>
             </div>
          </div>
-         
+         <!------------------->
          <div class="user-info">
-            <div>
-               <label for="user-name">Name</label>
-               <input type="text" id="user-name" required/>
-            </div>
-            <div>
-               <label for="mobile">Mob. No.</label>
-               <input type="number" name="" id="mobile" required/>
-            </div>
+            <input type="text" id="user-name" placeholder="Name" required/>
+            <input type="number" id="mobile" placeholder="Mobilee No." required/>
          </div>
-         
+   <!--====================-->
          <hr>
-         
-         <div>
+   <!--====================-->
+         <div class="search-box">
             <input type="text" id="addinput"/>
             <button type="button" id="additem">ADD</button>
          </div>
-         
+   <!--============-->
          <hr>
-         
+   <!--===============-->
          <div class="list-items" id="list-box"> </div>
-         
       </div>
    </div>
 
-
-
-
-
-
-<div class="saved-list">
-   <table>
-      <tr class="table-head">
-         <th>S N.</th>
-         <th class="name">Name</th>
-         <th>ID.</th>
-         <th>Quality</th>
-         <th class="tp">Total-Price</th>
-         <th>option</th>
-      </tr>
-      <tr>
-         <td>1</td>
-         <td>amahnjjjnbhhhhnnn</td>
-         <td>01</td>
-         <td>5</td>
-         <td>800</td>
-         <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
-      </tr>
-   </table>
-</div>
+<!--++++++++++++++++++++++++++-->
+<div class="final-list" id="final-list"></div>
 
 
 <script src="data.js"></script>
